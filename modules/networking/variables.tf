@@ -19,7 +19,7 @@ variable "virtual_network_address_space" {
 }
 
 variable subnet_names {
-    type=set(string)
+    type=map(string)
     description="This defines the subnets within the virtual network"
 }
 
