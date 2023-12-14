@@ -28,3 +28,13 @@ variable "bastion_required" {
   description="This defines whether the bastion service is required"
   default = false
 }
+
+variable network-security_group_names {
+    type=map(string)
+    description="This defines the names of the network security groups"
+}
+
+variable "network_security_group_rules" {
+  type=list
+  description = "This defines the network security group rules"
+}
